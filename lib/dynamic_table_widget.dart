@@ -1,5 +1,6 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
+import 'package:data_table_2/data_table_2.dart';
 
 import 'package:dynamic_table/dynamic_table_data_column.dart';
 import 'package:dynamic_table/dynamic_table_data_row.dart';
@@ -411,9 +412,9 @@ class DynamicTableState extends State<DynamicTable> {
     _columns = [...widget.columns];
   }
 
-  List<DataColumn> _getTableColumns() {
-    List<DataColumn> columnList = _columns.map((e) {
-      return DataColumn(
+  List<DataColumn2> _getTableColumns() {
+    List<DataColumn2> columnList = _columns.map((e) {
+      return DataColumn2(
           label: e.label,
           numeric: e.numeric,
           tooltip: e.tooltip,
